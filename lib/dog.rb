@@ -66,7 +66,13 @@ def self.find_by_id(id)
   dog
 end
 
-def self.find_or_create_by
+def self.find_or_create_by(name:, breed:)
+  dog = DB[:conn].execute("SELECT * FROM dogs WHERE name = ? AND breed = ?" name, album)
+
+  if !dog = empty?
+    data = dog[]
+    dog = Dog.new(id: data[0], name: data[1], name:[2])
+    dog
 
 end
 
