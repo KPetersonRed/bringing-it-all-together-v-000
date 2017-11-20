@@ -1,5 +1,5 @@
 
-binding 'pry'
+require binding 'pry'
 class Dog
 
 attr_accessor :name, :breed
