@@ -48,6 +48,8 @@ def self.create(hash)
   dog
 end
 
-
+def self.find_by_name(id:)
+  sql = "SELECT * FROM dogs WHERE name = ?"
+  
 
 end
