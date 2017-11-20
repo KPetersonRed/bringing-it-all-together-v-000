@@ -44,7 +44,7 @@ end
 
 def self.new_from_db(array)
   'binding.pry'
-  new_dog = self.new(id = array[0], name=array[1], breed=array[2])
+  new_dog = self.new(id: array[0], name: array[1], breed: array[2])
   new_dog
 
 end
