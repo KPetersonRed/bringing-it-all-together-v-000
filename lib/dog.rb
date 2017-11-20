@@ -42,6 +42,11 @@ def save
     end
 end
 
+self.new_from_db(array)
+  self.new(array[0], array[1], array[2])  
+
+end
+
 def self.create(hash)
   dog=self.new(hash)
   dog.save
@@ -54,7 +59,7 @@ def self.find_by_id(id)
     SQL
 
   new_dog = DB[:conn].execute(sql, id)[0]
-  dog = self.new(new_dog)
+  dog = self.new_from_db(new_dog)
 dog
 end
 
