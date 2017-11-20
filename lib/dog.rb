@@ -62,7 +62,13 @@ def self.find_by_id(id)
 
   new_dog = DB[:conn].execute(sql, id)[0]
   dog = self.new_from_db(new_dog)
-dog
+  
+  dog
 end
+
+def self.find_or_create_by
+
+end
+
 
 end
