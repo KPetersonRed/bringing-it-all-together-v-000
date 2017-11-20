@@ -71,7 +71,7 @@ def self.find_or_create_by(name:, breed:)
 
   if !dog = empty?
     data = dog[]
-    dog = Dog.new(id: data[0], name: data[1], name:[2])
+    dog = Dog.new(id: data[0], name: data[1], breed:[2])
   else
     dog=self.create(name: name, breed: breed)
   end
