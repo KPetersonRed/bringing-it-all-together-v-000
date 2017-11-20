@@ -49,7 +49,8 @@ def self.create(hash)
 end
 
 def self.find_by_id(id)
-  sql = "SELECT * FROM dogs WHERE name = ?"
+  sql = "SELECT * FROM dogs WHERE id = ?"
+  
 end
 
 end
