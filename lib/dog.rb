@@ -42,10 +42,10 @@ def save
     end
 end
 
-def self.create(name:, breed:)
-  dog=Dog.new(name: name, breed: breed)
+def self.create(hash)
+  dog=self.new(hash)
   dog.save
-  dog  
+  dog
 end
 
 
