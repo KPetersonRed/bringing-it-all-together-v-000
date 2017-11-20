@@ -42,7 +42,7 @@ def save
     end
 end
 
-self.new_from_db(array)
+def self.new_from_db(array)
   self.new(array[0], array[1], array[2])  
 
 end
